@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package Principal;
-import Adicionales.Aderezo;
+import Adicionales.Crema;
+import Adicionales.Frutilla;
 import Postres.*;
 import Procesos.*;
 import Leche.*;
@@ -23,16 +24,18 @@ public class Sistema {
         
         // Producir Helado
                 Helado helado_vainilla = new Helado("Vainilla");
-        helado_vainilla.anadirAderezoPostre(helado_vainilla, Aderezo.CREMA);
-        helado_vainilla.anadirAderezoPostre(helado_vainilla, Aderezo.FRUTILLA);
+        
+        
+        helado_vainilla.anadirAderezoPostre(helado_vainilla, new Crema());
+        helado_vainilla.anadirAderezoPostre(helado_vainilla, new Frutilla());
         System.out.println(helado_vainilla);
 //        mnj_leche.cambiarTipoLeche(leche, helado_vainilla);
         System.out.println(ManejadorDePrecio.showPrecioFinal(helado_vainilla.getPrecioParcial(), helado_vainilla.getAderezos() ));
         
         // Producir Pastel
         Pastel pastel_chocolate = new Pastel("Chocolate");
-        pastel_chocolate.quitarAderezoPostre(pastel_chocolate, Aderezo.CREMA);
-        pastel_chocolate.anadirAderezoPostre(pastel_chocolate, Aderezo.FRUTILLA);
+        pastel_chocolate.quitarAderezoPostre(pastel_chocolate, new Crema());
+        pastel_chocolate.anadirAderezoPostre(pastel_chocolate, new Frutilla());
         System.out.println(pastel_chocolate);
 //        mnj_leche.cambiarTipoLeche(leche, pastel_chocolate);
         System.out.println(ManejadorDePrecio.showPrecioFinal(pastel_chocolate.getPrecioParcial(), pastel_chocolate.getAderezos()));
