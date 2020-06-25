@@ -12,12 +12,12 @@ import java.util.ArrayList;
  *
  * @author User
  */
-public class Postres {
+public class Postre {
     protected String sabor;
     protected double precioParcial;
     protected ArrayList<Aderezo> aderezos;
 
-    public Postres(String sabor, double precio){
+    public Postre(String sabor, double precio){
         this.aderezos= new ArrayList<Aderezo>();
         this.sabor= sabor;
         this.precioParcial= precio;     
@@ -45,11 +45,11 @@ public class Postres {
     public void setAderezos(ArrayList<Aderezo> aderezos) {
         this.aderezos = aderezos;
     }
-    public void anadirAderezoHelado(Helado helado,Aderezo aderezo){
+    public void anadirAderezoPostre(Postre postre,Aderezo aderezo){
         aderezos.add(aderezo);
     }
     
-    public void quitarAderezoHelado(Helado helado,Aderezo aderezo){
+    public void quitarAderezoPostre(Postre postre,Aderezo aderezo){
         aderezos.remove(aderezo);
     }
 }
