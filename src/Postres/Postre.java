@@ -45,11 +45,11 @@ public class Postre {
     public void setAderezos(ArrayList<Aderezo> aderezos) {
         this.aderezos = aderezos;
     }
-    public void anadirAderezoPostre(Postre postre,Aderezo aderezo){
+    public void anadirAderezoPostre(Aderezo aderezo){
         aderezos.add(aderezo);
     }
     
-    public void quitarAderezoPostre(Postre postre,Aderezo aderezo){
+    public void quitarAderezoPostre(Aderezo aderezo){
         aderezos.remove(aderezo);
     }
 }
