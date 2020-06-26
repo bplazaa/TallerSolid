@@ -18,7 +18,7 @@ public class Sistema {
     public static void main(String [ ] args){
         // Producir un helado de vainilla y una torta de chocolate, 
         // a ambos agregarles CREMA y FRUTILLAS
-        // y cambiar el tipo de leche por Leche Deslactosada / antes era Descremada
+        // y cambiar el tipo de leche por Leche Descremada
         LecheDes leche = new LecheDescremada();
         ArrayList<Postre> arrPostres = new ArrayList<>();
         ManejadorDeLeche mnj_leche = new ManejadorDeLeche();
