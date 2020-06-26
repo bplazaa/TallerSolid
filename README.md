@@ -15,6 +15,7 @@ Se viola el principio SRP ya que los métodos calcularPrecioFinal() y  showPreci
 Se viola el principio SRP ya que cada tipo de aderezo debe tener su propia clase que se encargue de asignarle un nombre. Además se viola el principio OCP ya que la clase abstracta Aderezo debería estar abierta a la modificación desde las subclases para permitir crear nuevos tipos de Aderezo sin tener que modificar la clase padre - principal. Y DIP ya que los tipos de aderezos no deberian depender entre ellas.
 
 #### Literal 5
-
+La función de usarPastel() en la clase LecheDeslactosada lanza una excepción, puesto que hereda de la clase leche que la obliga a implementar el método. Sin embargo este no es usado. Violando de esta forma el principio LSP de SOLID.
+Se creó una clase que hace las veces de interfaz LecheDes implementando a la clase LecheEntera. De esta forma se puede dar la posibilidad a que existan tipos de leche que se puede usar en distintos postres.
 
 #### Literal 6
